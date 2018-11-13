@@ -1,0 +1,34 @@
+<!-- <div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+   <div class="flb">
+      <div class="Aligner-item Aligner-item-top"></div>
+      <img src="assets/img/axa.png">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+   </div>
+</div> -->
+    <ion-header no-border>
+    <ion-navbar>
+        <!--<button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>-->
+      </ion-navbar>
+    </ion-header>
+    <ion-content class="main-bg2">
+         <ion-card>
+            <ion-card-header>
+                Activation
+            </ion-card-header>
+            <ion-card-content>
+                <ion-list no-line>
+                    <ion-item>
+                        <ion-input type="password" [(ngModel)]="useractivationcode" placeholder="Activation Code"></ion-input>
+                    </ion-item>
+                    <button ion-button block outline color="light" (click)="activate(useractivationcode)">
+                        Proceed
+                    </button>
+                    <a>Forgot your Activation code? <b>Get help</b></a>
+                    <p>OR</p>
+                </ion-list>
+            </ion-card-content>
+        </ion-card>
+        <button class="bottom" ion-button clear full color="light">Don't have an account? Sign Up</button>
+    </ion-content>

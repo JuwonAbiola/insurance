@@ -1,0 +1,55 @@
+<ion-header no-border>
+  <ion-navbar>
+    <ion-title>Make a Claim</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <p class="text-center f-15">
+    <strong>To file a new claim, kindly fill the form below.</strong>
+  </p>
+  <ion-list>
+    <ion-item no-lines>
+      Claim Form
+      <ion-icon color="grey" name="ios-arrow-down-outline" item-end style="zoom:1.0;"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Policy Number</ion-label>
+      <ion-input type="text" [(ngModel)]="polnum"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Client name</ion-label>
+      <ion-input type="text" [(ngModel)]="claimant"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Narration</ion-label>
+      <ion-input type="text" [(ngModel)]="narr"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Claim Date</ion-label>
+      <ion-input type="date" [(ngModel)]="clmdate"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Loss Date</ion-label>
+      <ion-input type="date" [(ngModel)]="lossdate"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Loss Hour</ion-label>
+        <ion-input type="text" [(ngModel)]="dd_lhour"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>loss Minute</ion-label>
+        <ion-input type="text" [(ngModel)]="dd_lminute"></ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-label floating>Start Date</ion-label>
+      <ion-input type="date" [(ngModel)]="dd_insprdstr"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>End Date</ion-label>
+      <ion-input type="date" [(ngModel)]="dd_insprdend"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div class="flexy pt-20">
+    <button ion-button block color="blue" (click)="submitdata()">Submit</button>
+  </div>
+</ion-content>

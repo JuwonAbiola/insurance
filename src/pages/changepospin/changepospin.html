@@ -1,0 +1,30 @@
+<ion-header no-border>
+  <ion-navbar>
+    <button ion-button menuToggle>
+        <ion-icon name="ios-arrow-back-outline" style="zoom:1.5;"></ion-icon>
+      </button>
+    <ion-title class="c-white">Change pos account pin</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+      <ion-item>
+        <ion-label>Select a User</ion-label>
+        <ion-select [(ngModel)]="user">
+          <ion-option value="sul">Sullivan Wisdom</ion-option> 
+          <ion-option value="oscar">Oscar Milan</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item class="pt-15">
+          <ion-input type="number" placeholder="Enter pin"></ion-input>
+          <ion-icon name="ios-eye-outline" item-right></ion-icon>
+      </ion-item>
+      <ion-item class="pt-15">
+          <ion-input type="number" placeholder="Confirm pin"></ion-input>
+          <ion-icon name="ios-eye-outline" item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+    <div class="flexy pt-20"><button class="signin-btn" ion-button block color="blue">Proceed</button></div>
+</ion-content>
+
+

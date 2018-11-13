@@ -1,0 +1,71 @@
+page-claim {
+
+.bar-button-default-md{
+    color: #fff;
+  }
+  ion-card.card {
+    box-shadow: none;
+    color: #000;
+    background: #fff;
+    border-radius: 5px;
+  }
+  ion-card-header.header{
+    color: #000 !important;
+  }
+  .toolbar-title{
+    color: #fff;
+  }
+
+  .progress{
+    overflow: hidden;
+    counter-reset: step;
+  }
+  .progress li{
+    list-style-type: none;
+    color: #000;
+    width: 33.3%;
+    text-align: center;
+    float: left;
+    position: relative;
+  }
+  .progress li:first-child{
+    margin-left: -15px;
+  }
+  .progress li:before{
+    content: counter(step);
+    counter-increment: step;
+    width: 30px;
+    line-height: 30px;
+    display: block;
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #284191;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+  }
+  .progress li:after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background:#284191;
+    position: absolute;
+    left: -50%;
+    top: 15px;
+    z-index: -1;
+  }
+  .progress li:first-child:after{
+    content: none;
+  }
+  .progress li.active:before, .progress li.active:after{
+    background:#284191;
+    color: #fff;
+  }
+   .protection-btn {
+    background:#fff;
+    color: #222;
+    border-bottom: 1px solid #ddd !important;
+  }
+
+}

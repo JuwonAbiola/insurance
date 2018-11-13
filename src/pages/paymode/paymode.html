@@ -1,0 +1,30 @@
+<ion-header>
+     <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="ios-arrow-back-outline" style="zoom:1.5;"></ion-icon>
+          </button>
+        <ion-title class="c-white">Payment</ion-title>
+      </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <h3 class="c-blue text-center">Payment mode</h3>
+    <ion-list no-lines>
+        <ion-item>
+            <div class="inner_bt">
+               <img class="button" src="assets/img/card.png" (click)="card()">
+            </div>
+        </ion-item>
+        <ion-item>
+            <div class="inner_bt">
+                <img class="button"  src="assets/img/cash.png">
+            </div>
+        </ion-item>
+        <ion-item>
+            <div class="inner_bt">
+                <img class="button"  src="assets/img/qr.png">
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>

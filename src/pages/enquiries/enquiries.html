@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title class="c-white">Enquiries</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+      <ion-item>
+        <ion-label color="grey" floating>Full Name</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="grey" floating>Enquiry Type</ion-label>
+        <ion-select [(ngModel)]="enquiry">
+          <ion-option value="ins">Insurance</ion-option>
+          <ion-option value="inv">Investment</ion-option>
+          <ion-option value="pen">Pension</ion-option>
+          <ion-option value="hea">Health</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+          <ion-textarea placeholder="Details of Enquiry"></ion-textarea>
+      </ion-item>
+      <ion-item>
+        <ion-label color="grey" floating>Email Address</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="grey" floating>Mobile Number</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div class="flexy pt-20"><button ion-button block color="blue">Submit</button></div>
+</ion-content>

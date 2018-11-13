@@ -1,0 +1,53 @@
+
+  <ion-header no-border>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-buttons end>
+        <button ion-button icon-only (click)="profile()">
+          <ion-icon name="contact"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+  <ion-card-header>
+    <h2>Welcome</h2>
+  </ion-card-header>
+
+  <ion-content class="background">
+
+
+
+
+
+
+  <div class="acti">
+      <img class="center" style="zoom:9.0;" src="assets/img/home.png">
+    <ion-footer>
+    <ion-grid >
+    <ion-list >
+      <ion-row><button color="light" class="invest-btn text-center" color="blue" ion-item (click)="press()">
+        <ion-icon name="ios-car-outline" item-start style="zoom:1.0;"></ion-icon>Motor insurance
+        <ion-icon item-end style="zoom:1.0;"></ion-icon>
+      </button></ion-row>
+      <ion-row><button class="invest-btn text-center" ion-item color="blue">
+        <ion-icon name="ios-medkit-outline" item-start style="zoom:1.0;"></ion-icon>Health Insurance
+        <ion-icon item-end style="zoom:1.0;"></ion-icon>
+      </button></ion-row>
+     <ion-row> <button class="health-btn text-center" ion-item color="blue">
+         <ion-icon name="ios-archive-outline" item-start style="zoom:1.0;"></ion-icon>Investment
+        <ion-icon item-end style="zoom:1.0;"></ion-icon>
+      </button></ion-row>
+     <ion-row> <button class="invest-btn text-center" ion-item color="blue">
+        <ion-icon name="ios-alert-outline" item-start style="zoom:1.0;"></ion-icon>Pension
+        <ion-icon item-end style="zoom:1.0;"></ion-icon>
+      </button></ion-row>
+      </ion-list>
+
+  
+    <!-- <button ion-button class="btn-bg1 text-right" color="light"  (click)="explore()" round full large>View Insurance</button>-->
+    </ion-grid>
+    </ion-footer>
+  </div>
+</ion-content>

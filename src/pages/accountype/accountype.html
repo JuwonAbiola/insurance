@@ -1,0 +1,14 @@
+<ion-header no-border>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="ios-arrow-back-outline" style="zoom:1.5;"></ion-icon>
+    </button>
+    <ion-title class="c-white">Account Type</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h3 class="text-center">Select Account Type</h3>
+  <div class="flexy pt-20"><button ion-button block color="blue" (click)="payment('savings')">Savings Account</button></div>
+  <div class="flexy pt-20"><button ion-button block color="blue" (click)="payment('current')">Current Account</button></div>
+  <div class="flexy pt-20"><button ion-button block color="blue" (click)="payment('credit')">Credit</button></div>
+</ion-content>

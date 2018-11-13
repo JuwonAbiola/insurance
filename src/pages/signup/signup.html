@@ -1,0 +1,48 @@
+<ion-header no-border>
+  <ion-navbar>
+    <!-- <button ion-button menuToggle>
+        <ion-icon name="ios-arrow-back-outline" style="zoom:1.5;"></ion-icon>
+      </button> -->
+    <ion-title class="c-white">Get Started</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <!-- <ul class="progress">
+        <li class="active">Account Details</li>
+        <li>Customer Details</li>
+    </ul> -->
+  <p class="text-center f-15">Provide Necessary Information Only</p>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Surname</ion-label>
+      <ion-input type="text" [(ngModel)]="surname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Other Name</ion-label>
+      <ion-input type="email" [(ngModel)]="othername"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Phone</ion-label>
+      <ion-input type="text" [(ngModel)]="phone"></ion-input>
+    </ion-item>
+    <ion-item class="pt-10">
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div class="flexy pt-20">
+    <button ion-button block color="blue" (click)="signUp()">Sign Up</button>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <p class="text-center pt-30">Already registered ?</p>
+      </ion-col>
+      <ion-col col-6>
+        <div class="flexy pt-30">
+          <button ion-button clear color="blue" (click)="signin()">Sign In</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

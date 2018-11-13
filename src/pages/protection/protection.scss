@@ -1,0 +1,72 @@
+page-protection {
+   .top-protection {
+    width: 100%;
+    height: 60%;
+    background-image: url('../assets/img/par.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+  }
+  .bottom-product {
+    width: 100%;
+    height: 65%;
+  }
+  .toolbar-background {
+    color: #fff;
+    background: transparent !important;
+  }
+
+  .bar-button-default-md {
+    color: #fff;
+  }
+  .part-title {
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    left: 5%;
+  }
+  .part-title h1 {
+    font-size: 200%;
+    color: #fff;
+  }
+  /*ion-item.item {
+    padding: 20px 0px;
+  }*/
+  .get_info{
+    margin: 0px !important;
+    font-size: 20px;
+    padding: 15px 10px;
+    color: #fff;
+    background:#05c4a7;
+  }
+  .prot-btn {
+    background:#6425B4;
+    color: #fff;
+  }
+  .protection-btn {
+    background:#fff;
+    color: #222;
+    border-bottom: 1px solid #ddd !important;
+  }
+  icon-name.icon ios-arrow-forward-outline{
+    color: #777 !important;
+  }
+  .health-btn {
+    background:#0996a0;
+    color: #fff;
+  }
+  .invest-btn {
+    background:#12bfcc;
+    color: #fff;
+  }
+  .part-btn {
+    font-size: 18px;
+    padding: 10px 10px;
+    border-bottom: 1px solid #ddd !important;
+  }
+  .part-btn:first-child {
+    margin-top: 10px !important;
+  }
+}

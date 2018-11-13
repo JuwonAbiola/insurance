@@ -1,0 +1,71 @@
+page-productslist {
+        .top-product {
+          width: 100%;
+          height: 40%;
+          background-image: url('../assets/img/art.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: relative;
+        }
+        .bottom-product {
+          width: 100%;
+          height: 60%;
+        }
+        .toolbar-background {
+          color: #fff;
+          background: transparent !important;
+        }
+        /*.scroll-content {
+          align-content: center;
+          display: flex;
+          flex-direction: column;
+          justify-content:center;
+          text-align: center;
+        }*/
+        .part-title {
+          position: absolute;
+          width: 100%;
+          bottom: 5%;
+          left: 5%;
+        }
+        .part-title h1 {
+          font-size: 200%;
+          color: #fff;
+        }
+        /*ion-item.item {
+          padding: 20px 0px;
+        }*/
+        .get_info{
+          margin: 0px !important;
+          font-size: 20px;
+          padding: 15px 10px;
+          color: #fff;
+          background: #34e2d4;
+        }
+        .pro-btn {
+          background:#087fce;
+          color: #fff;
+          border-bottom: 1px solid #fff;
+        }
+        .pension-btn {
+          background:#05c4a7;
+          color: #fff;
+        }
+        .health-btn {
+          background:#0996a0;
+          color: #fff;
+        }
+        .invest-btn {
+          background:#12bfcc;
+          color: #fff;
+        }
+        .part-btn {
+          font-size: 18px;
+          padding: 10px 10px;
+          border-bottom: 1px solid #ddd !important;
+        }
+        .part-btn:first-child {
+          margin-top: 10px !important;
+        }
+}

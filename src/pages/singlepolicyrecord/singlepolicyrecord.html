@@ -1,0 +1,62 @@
+<!--
+  Generated template for the SinglepolicyrecordPage page.
+
+  See http://ionicframewor.com/docs/cmponents/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Policy Record</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="flexy pt-20">
+        <button ion-button block color="blue" (click)="submit()">View policy record</button>
+  </div>
+
+
+
+<!--<ion-fab right class="floating-action" (click)="addMenu()">
+    <button ion-fab>
+  <ion-icon name="add"></ion-icon>
+</button>
+<ion-fab-list side="top">
+  <button ion-fab class="option" (click)="protection()">
+    <span class="flaticon-gym-1"></span>
+    <div class="fab-label fab-label-mov">Create Policy</div>
+  </button>
+  <button ion-fab class="option" (click)="update()">
+    <span class="flaticon-people"></span>
+    <div class="fab-label fab-label-work">Update Policy</div>
+  </button>
+  <button *ngIf="dev" ion-fab class="option" (click)="createProgram()"><ion-icon name="calendar"></ion-icon></button>
+</ion-fab-list><ion-icon name="logo-facebook"></ion-icon>
+</ion-fab>-->
+
+
+
+ <ion-fab  bottom right>
+    <button ion-fab color="blue">
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <ion-fab-list side="top">
+    <button ion-fab (click)="list()">
+        <ion-icon color="blue" name="play"></ion-icon>
+        <div>List of Policies</div>
+      </button>
+    <button ion-fab (click)="update()" >
+        <ion-icon color="blue" name="play"></ion-icon>
+        <div>Update Policy</div>
+      </button>
+      <button ion-fab (click)="protection()">
+        <ion-icon color="blue" name="play"></ion-icon>
+        <div>Create Policy</div>
+      </button> 
+      
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

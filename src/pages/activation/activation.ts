@@ -1,0 +1,27 @@
+import { Component } from '@angular/core';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+/**
+ * Generated class for the ActivationPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
+@IonicPage()
+@Component({
+  selector: 'page-activation',
+  templateUrl: 'activation.html',
+})
+export class ActivationPage {
+  splash = true;
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  ionViewDidLoad() {
+    //  setTimeout(() =>{
+    //      this.splash = false;
+    //  }, 9000)
+  }
+
+}
