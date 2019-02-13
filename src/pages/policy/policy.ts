@@ -50,37 +50,29 @@ export class PolicyPage {
     let clientCode = localStorage.getItem('clientNo');
 
     let headers = {
-      Authorization: "Bearer 39109f7df56e1051c399e685066bb852",
+      Authorization: "NkY4NTQ4MEQ5RThGMUM1RjlGOTlDM0M2QkJCMUJDQ0Y1QjI4MEVCNkUyQjQ1QzFFQzlGRDJFN0U5MDhERTdDNg==",
       'Content-Type': 'application/json'
     }
 
     let data = {
-      'clientname': 'Samuel Ochiwu',
-      'polclass': '1',
-      'clientcode': clientCode,
-      'polagency': 'BR-0691',
-      'risktype': '022-01',
-      'polstatus': '0',
-      'issuedate': '2018-06-19',
-      'branch': '0505',
-      'enddate': '2019-07-19',
-      'dd_clo': 'UKSS-420',
-      'effdate': '2018-07-09'
+      'policy_number': 'HO/V/29/B0001235',
+      'merchant_id': 'CUST_00004',
+      'subsidiary': '2'
     }
 
-    const URL = "http://104.199.122.248/iesdemo_genbiz/gen_api/ies_connect.php?process=users&opmode=EBCreatePolicy";
+    const URL = "https://apitest.custodianplc.com.ng/api/Agent/GetPolicyDetails";
 
 
     this.http.post(URL, data, headers).then((res: any) => {
       //console.log(res.data);
-     // alert(JSON.stringify(res));
+      // alert(JSON.stringify(res));
       let response = JSON.parse(res.data);
       //console.log(response.data);
       let polnum = response.result.polnum;
       let statusMessage = response.result.message;
-     //this.alertService(statusMessage).present();
+      //this.alertService(statusMessage).present();
       alert(statusMessage);
-     // alert(polnum);
+      // alert(polnum);
       if (polnum) {
         localStorage.setItem('polnum', polnum)
       }

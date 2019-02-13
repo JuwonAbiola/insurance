@@ -3,8 +3,8 @@ import { IonicPage, NavController, NavParams, ToastController, LoadingController
 import { ProductsPage } from '../products/products';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { HttpProvider } from '../../providers/http/http';
-import {CustomerinfoPage} from '../customerinfo/customerinfo';
-import { ProtectionPage} from '../protection/protection';
+import { CustomerinfoPage } from '../customerinfo/customerinfo';
+import { EnquiriesPage } from '../enquiries/enquiries';
 
 /**
  * Generated class for the HomeePage page.
@@ -19,8 +19,12 @@ import { ProtectionPage} from '../protection/protection';
   templateUrl: 'homee.html',
 })
 export class HomeePage {
-    
-  constructor(public alertCtrl: AlertController, public loadingCtrl: LoadingController, public navCtrl: NavController,public http: HttpClient, public navParams: NavParams) {
+  clientNo: string;
+  gsm: string;
+  email: string;
+  userID: string;
+
+  constructor(public alertCtrl: AlertController, public loadingCtrl: LoadingController, public navCtrl: NavController, public http: HttpClient, public navParams: NavParams) {
   }
   alertService = (response) => {
 
@@ -32,7 +36,10 @@ export class HomeePage {
 
   }
   ionViewDidLoad() {
-    console.log('Initial Homme Page load')
+    this.clientNo = localStorage.getItem('clientNo');
+    this.gsm = localStorage.getItem('gsm');
+    this.email = localStorage.getItem('email');
+    this.userID = localStorage.getItem('userID');
   }
 
   ionViewCanEnter() {
@@ -46,7 +53,7 @@ export class HomeePage {
       'Authorization': 'Bearer 39109f7df56e1051c399e685066bb852'
     });
     let customerID = localStorage.getItem('customerID');
-    let customerInfoUrl = 'http://104.199.122.248/iesdemo_genbiz/gen_api/ies_connect.php?process=users&opmode=EBGetCustomerInfo&cltcode='+customerID;
+    let customerInfoUrl = 'http://104.199.122.248/iesdemo_genbiz/gen_api/ies_connect.php?process=users&opmode=EBGetCustomerInfo&cltcode=' + customerID;
 
     this.http.get(customerInfoUrl, { headers: headers }).subscribe((res: any) => {
       loader.dismiss()
@@ -65,17 +72,16 @@ export class HomeePage {
 
   }
 
-    press(){
-      this.navCtrl.push(ProtectionPage);
-    }
+  pay() {
+    this.navCtrl.push(EnquiriesPage);
+  }
 
-  profile(){
+  profile() {
     this.navCtrl.push(CustomerinfoPage);
   }
 
-    explore(){
+  explore() {
     this.navCtrl.setRoot(ProductsPage);
   }
 
 }
- 

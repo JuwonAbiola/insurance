@@ -103,7 +103,7 @@ import { HttpProvider } from '../providers/http/http';
     TransdetailsPageModule,
     Cardanime2PageModule,
     CardanimePageModule,
-    IonicModule.forRoot(MyApp, {tabsPlacement:'top'})
+    IonicModule.forRoot(MyApp, { tabsPlacement: 'top' })
   ],
   bootstrap: [IonicApp],
   entryComponents: [

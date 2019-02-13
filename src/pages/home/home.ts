@@ -5,7 +5,7 @@ import { HomeePage } from '../homee/homee';
 import { AlertController } from 'ionic-angular';
 import { ContactPage } from '../contact/contact';
 import { ClaimPage } from '../claim/claim';
-import {MenuController} from 'ionic-angular';
+import { MenuController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -13,16 +13,16 @@ import {MenuController} from 'ionic-angular';
 })
 export class HomePage {
   public enable: boolean;
-  constructor(public navCtrl: NavController, public menuCtrl: MenuController ,private alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public menuCtrl: MenuController, private alertCtrl: AlertController) {
     this.menuCtrl.enable(true, 'myMenu');
   }
-  contact(){
+  contact() {
     this.navCtrl.push(ContactPage);
   }
   getStarted() {
     this.navCtrl.push(LoginPage);
   }
-  claim(){
+  claim() {
     this.navCtrl.push(ClaimPage);
   }
 
@@ -32,6 +32,9 @@ export class HomePage {
     // this.enable = true;
   }
 
+  act() {
+    this.navCtrl.push(LoginPage);
+  }
   presentAlert() {
     let alert = this.alertCtrl.create({
       title: 'Please Sign Up and Login',
@@ -40,9 +43,6 @@ export class HomePage {
     alert.present();
   }
 
-  explore() {
-    this.navCtrl.setRoot(HomeePage);
-  }
 
 
 

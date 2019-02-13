@@ -1,37 +1,84 @@
 <ion-header>
-    <ion-navbar>
-      <button ion-button menuToggle>
-        <ion-icon name="menu"></ion-icon>
-      </button>
-      <ion-title class="c-white">Enquiries</ion-title>
-    </ion-navbar>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title><img src="../../assets/icon/Mask Group 1.svg" alt="Smiley face" height="42" width="42">
+    </ion-title>
+  </ion-navbar>
 </ion-header>
 <ion-content padding>
-    <ion-list>
-      <ion-item>
-        <ion-label color="grey" floating>Full Name</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label color="grey" floating>Enquiry Type</ion-label>
-        <ion-select [(ngModel)]="enquiry">
-          <ion-option value="ins">Insurance</ion-option>
-          <ion-option value="inv">Investment</ion-option>
-          <ion-option value="pen">Pension</ion-option>
-          <ion-option value="hea">Health</ion-option>
-        </ion-select>
-      </ion-item>
-      <ion-item>
-          <ion-textarea placeholder="Details of Enquiry"></ion-textarea>
-      </ion-item>
-      <ion-item>
-        <ion-label color="grey" floating>Email Address</ion-label>
-        <ion-input type="email"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label color="grey" floating>Mobile Number</ion-label>
-        <ion-input type="tel"></ion-input>
-      </ion-item>
-    </ion-list>
-    <div class="flexy pt-20"><button ion-button block color="blue">Submit</button></div>
+  <br />
+  Kindly Confirm the Details Below to Proceed
+  <br />
+  <br />
+  <br />
+  <ion-card>
+    <ion-card-header class="head">
+      <span class="sp-left">POLICY INFORMATION</span>
+      <span class="sp-right">EBUSINESS POLICY</span>
+    </ion-card-header>
+    <ion-card-header class="c">
+      <span class="sp-left">
+        Policy Period:
+      </span>
+      <span class="sp-right">
+        15/09/2018-15/09/2021
+      </span><br /> <span class="sp-left">
+        Sum Insured:
+      </span>
+      <span class="sp-right">
+        $700
+      </span> <br /><span class="sp-left">
+        Outstanding:
+      </span>
+      <span class="sp-right">
+        300
+      </span><br /> <span class="sp-left">
+        Total Premium Due:
+      </span>
+      <span class="sp-right">
+        300 </span>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-11 push-1>
+            <div>
+              <ion-list no-lines>
+                <button ion-item *ngFor="let item of items">
+                  hello
+                </button><button ion-item *ngFor="let item of items">
+                  hello
+                </button><button ion-item *ngFor="let item of items">
+                  hello
+                </button><button ion-item *ngFor="let item of items">
+                  hello
+                </button><button ion-item *ngFor="let item of items">
+                  hello
+                </button>
+              </ion-list>
+            </div>
+          </ion-col>
+          <ion-col col-1 pull-11>
+            <div></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+    </ion-card-content>
+  </ion-card>
+  <br />
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div><button ion-button color="blue">Confirm</button></div>
+      </ion-col>
+      <ion-col>
+        <div><button ion-button class="btn-bg">Cancel</button></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
 </ion-content>

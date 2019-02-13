@@ -38,18 +38,18 @@ import { InvestmentPage } from '../pages/investment/investment';
 
 })
 export class MyApp {
-   rootPage:any = HomePage;
+  rootPage: any = HomePage;
   @ViewChild(Nav) nav: Nav;
 
- // rootPage: any = PolicyPage;
+  // rootPage: any = PolicyPage;
   pages: Array<{ name: string, component: any, icon: string }>;
 
   constructor(public platform: Platform) {
     this.initializeApp();
 
     this.pages = [
-      { name: 'Home', component: HomeePage, icon: "home" },
-      { name: 'Setting', component: SettingPage, icon: "cog" },
+      { name: 'Redownload Keys', component: HomeePage, icon: "download" },
+      { name: 'Notifications', component: SettingPage, icon: "mail" },
       { name: 'Logout', component: HomePage, icon: "log-out" },
     ];
   }

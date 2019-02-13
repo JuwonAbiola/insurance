@@ -1,36 +1,27 @@
-<ion-header no-border>
-  <ion-navbar>
-     <button ion-button menuToggle>
-        <ion-icon name="ios-arrow-back-outline" style="zoom:1.5;"></ion-icon>
-      </button> 
-    <ion-title class="c-white">Login</ion-title>
-  </ion-navbar>
+<ion-header>
+  <ion-toolbar>
+    <ion-title><img src="../../assets/icon/Mask Group 1.svg" alt="Smiley face" height="42" width="42">
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
-<ion-content padding>
+<ion-content class="background">
+
+  <div class="act">
+    <h1>Welcome,</h1>
+    <h5>Sign in to continue.</h5><br />
     <ion-list>
       <ion-item class="pt-10">
-          <ion-input type="text" placeholder="Username" [(ngModel)]="username"></ion-input>
-          <ion-icon name="ios-person-outline" item-right></ion-icon>
+        <ion-input type="text" placeholder="Merchant ID" [(ngModel)]="MerchantID"></ion-input>
+        <ion-icon name="person" item-left></ion-icon>
       </ion-item>
+      <br />
       <ion-item class="pt-15">
-          <ion-input type="password" placeholder="Password"  [(ngModel)]="password"></ion-input>
-          <ion-icon name="ios-eye-outline" item-right></ion-icon>
+        <ion-input type="password" placeholder="Password" [(ngModel)]="MerchantPWD"></ion-input>
+        <ion-icon name="lock" item-left></ion-icon>
       </ion-item>
-      <ion-item>
-          <ion-label>Remember Me</ion-label>
-          <ion-checkbox color="blue" checked="true"></ion-checkbox>
-      </ion-item>
+      <div class="flexy pt-20"><button class="signin-btn" ion-button block color="blue" (click)="login()">Sign In</button></div>
+
     </ion-list>
-    
-    <div class="flexy pt-20"><button class="signin-btn" ion-button block color="blue" (click)="login()">Proceed</button></div>
-    <ion-grid>
-        <ion-row>
-            <ion-col col-6>
-                <p class="text-center pt-30">Don't have an Account ?</p>
-            </ion-col>
-            <ion-col col-6>
-                <div class="flexy pt-30"><button ion-button clear color="blue" (click)="signUp()">Sign Up</button></div>
-            </ion-col>
-        </ion-row>
-    </ion-grid>
-  </ion-content>
+  </div>
+
+</ion-content>

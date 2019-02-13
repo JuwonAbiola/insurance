@@ -17,7 +17,8 @@
 }
 
 .main-bg {
-  background-image: url('../assets/img/astro.jpg') !important;
+  // background-image: url('../assets/img/astro.jpg') !important;
+  background-color: #fff !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
@@ -26,9 +27,11 @@
 .ion-list.list {
   background: transparent !important;
 }
- .bar-button-default-md{
-    color: #fff;
-  }
+
+.bar-button-default-md {
+  color: #fff;
+}
+
 .button-md-blue {
   padding: 25px 0 !important;
 }
@@ -71,26 +74,26 @@
 }
 
 .blue-bg {
-  background-image: url('../assets/img/lighthouse.png') !important;
+  // background-image: url('../assets/img/lighthouse.png') !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
 }
 
 .btn-bg {
-  background: #162e62;
-  color: #fff;
+  background: #fff;
+  color: #000;
   border-bottom: 1px solid #fff !important;
 }
 
 .toolbar-background {
-  color: #fff;
-  background: #284191 !important;
+  color: #000;
+  background: #fff !important;
   box-shadow: 0px !important;
   border: 0px !important;
 }
 
 .toolbar-title {
-  color: #fff;
+  color: #000;
 }
 
 ion-header.header-md {
